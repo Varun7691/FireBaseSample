@@ -79,6 +79,15 @@
         android:textColor="#424242"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/remote_config_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/language_label"
+        android:textColor="#424242"
+        android:textSize="18sp" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -91,12 +100,45 @@
         android:layout_height="wrap_content"
         android:text="FireBase Storage" />
 
+    <TextView
+        android:id="@+id/file_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="null"
+        android:textColor="#424242"
+        android:textSize="14sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:weightSum="2">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/signIngButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Logged in"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+
+        </FrameLayout>
 
         <Button
             android:id="@+id/clickPhotoButton"
@@ -105,18 +147,31 @@
             android:layout_weight="1"
             android:text="Click Photo" />
 
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
         <Button
             android:id="@+id/uploadButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Upload" />
+
+        <Button
+            android:id="@+id/downloadButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Download" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/downloadButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Download" />
 
 </LinearLayout>

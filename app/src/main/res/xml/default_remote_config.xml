@@ -4,4 +4,8 @@
         <key>key</key>
         <value>#DefaultValue</value>
     </entry>
+    <entry>
+        <key>lang</key>
+        <value>en</value>
+    </entry>
 </defaultMap>

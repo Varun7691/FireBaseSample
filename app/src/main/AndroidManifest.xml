@@ -35,6 +35,9 @@
             </intent-filter>
         </service>
         <!-- [END firebase_iid_service] -->
+        <service
+            android:name="varun.com.firebasesample.utils.MyDownloadService"
+            android:exported="false" />
     </application>
 
 </manifest>
